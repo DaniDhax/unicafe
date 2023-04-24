@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
+<<<<<<< HEAD
 const Statistics = ({ good, neutral, bad, all }) => {
   
   if ( all === 0) {
+=======
+const Statistics = ({ good, neutral, bad }) => {
+  console.log({ good }.good +{ neutral }.neutral + { bad }.bad );
+  if ( { good }.good +{ neutral }.neutral + { bad }.bad === 0) {
+>>>>>>> 35cd3cbdc1ab9a8c4cb773760fa988e31ac7d9fa
     return (
       <div>
         <h1>statistics</h1>
@@ -40,8 +46,11 @@ const App = () => {
   const handleBadClick = () => {
     setBad(bad + 1);
   };
+<<<<<<< HEAD
 
   const all = good + neutral + bad
+=======
+>>>>>>> 35cd3cbdc1ab9a8c4cb773760fa988e31ac7d9fa
 
   return (
     <div>
