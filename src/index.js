@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
+const statistics = (props) => {
+  return (
+
+    
+  )
+}
+
+
 const App = () => {
 
   const [good, setGood] = useState(0)
@@ -35,7 +43,6 @@ const App = () => {
     </div>
   )
 }
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
