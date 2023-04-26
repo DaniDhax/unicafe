@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
+import React, { useState } from "react"
+import ReactDOM from "react-dom/client"
 
 const Button = ({ onClick, text }) => {
   return (
-    <button onClick={onClick}>  
+    <button onClick={onClick}>
       {text}
     </button>
   )
@@ -11,15 +11,35 @@ const Button = ({ onClick, text }) => {
 
 const StatisticLine = ({ text, value }) => {
   return (
-      <div>
-        <p>{text} {value}</p>
-      </div>
+    <div>
+    
+      <table>
+  <thead>
+    <tr>
+      <th>{text}</th>
+      <th>{value}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>"   "</td>
+      <td>"   "</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+    </div>
   )
 }
 
 const Statistics = ({ good, neutral, bad, all }) => {
-  
-  if ( all === 0) {
+
+  if (all === 0) {
     return (
       <div>
         <h1>statistics</h1>
@@ -63,8 +83,8 @@ const App = () => {
       <Button onClick={handleGoodClick} text="good" />
       <Button onClick={handleNeutralClick} text="neutral" />
       <Button onClick={handleBadClick} text="bad" />
-      <Statistics good={good} neutral={neutral} bad={bad} all={all}/>
-    </div>
+      <Statistics good={good} neutral={neutral} bad={bad} all={all} />
+    </div >
   )
 }
 
